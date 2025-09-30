@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lauren Rose - Neuroscience Student</title>
+    <title>Portfolio - Neuroscience Student</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +12,10 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4a90e2 0%, #1e3a8a 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -30,10 +30,45 @@
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
+            background: white;
+            color: #333;
+            padding: 60px 40px 0;
             text-align: center;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: #e9ecef;
+        }
+
+        nav a.active {
+            background: #2563eb;
+            color: white;
         }
 
         h1 {
@@ -57,18 +92,18 @@
         }
 
         h2 {
-            color: #667eea;
+            color: #2563eb;
             font-size: 1.8em;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #2563eb;
         }
 
         .education-card {
             background: #f8f9fa;
             padding: 25px;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #2563eb;
         }
 
         .school-name {
@@ -124,7 +159,7 @@
         }
 
         .company {
-            color: #667eea;
+            color: #2563eb;
             font-weight: 500;
         }
 
@@ -149,7 +184,7 @@
             content: "▹";
             position: absolute;
             left: 0;
-            color: #667eea;
+            color: #2563eb;
             font-weight: bold;
             font-size: 1.2em;
         }
@@ -164,11 +199,11 @@
             background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
-            border-top: 3px solid #667eea;
+            border-top: 3px solid #2563eb;
         }
 
         .skill-category h3 {
-            color: #667eea;
+            color: #2563eb;
             margin-bottom: 10px;
             font-size: 1.1em;
         }
@@ -187,7 +222,7 @@
 
         @media (max-width: 768px) {
             header {
-                padding: 40px 20px;
+                padding: 40px 20px 0;
             }
 
             h1 {
@@ -205,6 +240,14 @@
             .dates {
                 margin-top: 5px;
             }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                border-bottom: 1px solid #e9ecef;
+            }
         }
     </style>
 </head>
@@ -213,6 +256,15 @@
         <header>
             <h1>Lauren Rose</h1>
             <p class="subtitle">Neuroscience Student | Data Analytics Minor</p>
+            <p class="subtitle">774-276-0028 | lauren.rose2604@gmail.com</p>
+            <nav>
+                <ul>
+                    <li><a href="#education" class="active">Education</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
         </header>
 
         <div class="content">
