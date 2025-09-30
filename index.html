@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Rose - Neuroscience Student</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .education-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .school-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .degree {
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .coursework {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .job {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .job:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .dates {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        .responsibilities {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .responsibilities li {
+            padding-left: 25px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .responsibilities li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 3px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-list {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            .dates {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lauren Rose</h1>
+            <p class="subtitle">Neuroscience Student | Data Analytics Minor</p>
+        </header>
+
+        <div class="content">
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-card">
+                    <div class="school-name">Stonehill College</div>
+                    <div class="location">Easton, MA | Anticipated Graduation: May 2027</div>
+                    <div class="degree">Candidate for Bachelor of Science Degree</div>
+                    <div class="degree"><strong>Major:</strong> Neuroscience</div>
+                    <div class="degree"><strong>Minor:</strong> Data Analytics</div>
+                    <div class="coursework">
+                        <strong>Relevant Coursework:</strong> Biological Principles I & II, General Chemistry, Organic Chemistry I, Calculus, Statistics, Introduction to Neuroscience
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Barista</div>
+                            <div class="company">The Little Coffee Bean | Sutton, MA</div>
+                        </div>
+                        <div class="dates">May 2024 - Present</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Manage cash and credit sale transactions for customer purchases utilizing a Point-of-Sale System</li>
+                        <li>Fulfill beverage orders accurately and in a timely manner in a fast-paced quick-service environment</li>
+                        <li>Ensure a positive guest experience by attending to customers' needs and requests</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Shop Owner</div>
+                            <div class="company">Etsy | Online</div>
+                        </div>
+                        <div class="dates">August 2020 - Present</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Calculate supply costs and allocate time or expenses to replenish business needs</li>
+                        <li>Develop and design products to professionally display on shop website to appeal to customers</li>
+                        <li>Communicate with customers to address their questions and fulfill their requests as needed</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Group Leader</div>
+                            <div class="company">Circles Learning Center | Millbury, MA</div>
+                        </div>
+                        <div class="dates">March 2023 - August 2023</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Guide group instruction and develop schedule for school-aged children for after-school daycare program</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Intern</div>
+                            <div class="company">Elmwood Street Elementary School | Millbury, MA</div>
+                        </div>
+                        <div class="dates">September 2022 - May 2023</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Assist second grade students with understanding learning concepts individually or in small groups</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Server</div>
+                            <div class="company">Donut Star | Grafton, MA</div>
+                        </div>
+                        <div class="dates">August 2022 - October 2023</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Handle cash and credit sales for customer purchases using a Point-of-Sale System</li>
+                        <li>Ensure beverage orders are prepared accurately and promptly in a fast-paced, quick-service setting</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="leadership">
+                <h2>Leadership Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Vice President</div>
+                            <div class="company">Environmental Council | Millbury, MA</div>
+                        </div>
+                        <div class="dates">September 2022 - May 2023</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Organize weekly meeting schedules and collaborate with fellow board members to discuss meeting times and topics</li>
+                        <li>Lead group discussions regarding various environmental issues and concerns</li>
+                        <li>Coordinate recycling groups to ensure school-wide recycling takes place efficiently</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Secretary</div>
+                            <div class="company">National Honor Society | Millbury, MA</div>
+                        </div>
+                        <div class="dates">May 2022 - May 2023</div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Communicate with other board members to plan meetings, events, and fundraisers to support the community</li>
+                        <li>Record attendance at each meeting to ensure that club members attend necessary meetings</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Computer</h3>
+                        <div class="skill-list">
+                            Microsoft Office 365<br>
+                            Canva<br>
+                            Google Software<br>
+                            Etsy
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Laboratory</h3>
+                        <div class="skill-list">
+                            Microscopy<br>
+                            LabPro<br>
+                            Absorbance Spectrum
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Portfolio | Built for GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
